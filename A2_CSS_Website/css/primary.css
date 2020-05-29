@@ -1,0 +1,123 @@
+body {
+/*I am "selecting" body as the section of code that I am styling using css.*/
+	background-color: #000000;
+	/*background-color sets the default background colour if the background image doesn't work or if there is no background image at all.*/
+	background: url(../images/black_green_bg.jpeg) center center fixed;
+	/*this sets the image that is displayed as the background. Center center fixed allows the content to move over the image instead of setting it on top of the image. This allows the image to stay the same and not repeat if you have large amounts of content.*/
+	background-size: cover;
+	/*this tells the background to cover all areas of the webpage, including when the page is scrolling down.*/
+}
+
+p {
+	color: #FFFFFF;
+	/*color sets the color that the paragraphs are displayed in.*/
+	font-family:"Courier New", Courier, monospace;
+	/*This tells the browser which fonts to use for the paragraphs. There are multiple fonts because not all browsers have the same font, so these fonts are all very similar and at least one of them will be in the browser the user is on. Courier New is in " " because that font has two words to make up its name.*/
+}
+
+h1, h2, h3 {
+	color: #8CC63E;
+	font-family:Verdana, Geneva, sans-serif;
+}
+
+a:link, a:visited, a:active {
+/*a:link is styling a link when it's displayed on the webpage.*/
+/*a:visited is styling a link when it has previously been visited or clicked on.*/
+/*a:active is styling a link when it is currently in use or when you are on that page.*/
+	color: #FFFFFF;
+	padding: 10px;
+	/*padding provides area/space around/on the inside of the content you are styling.*/
+	line-height: 150%;
+	/*line height controls the spacing between content. It's similar to line spacing in google docs.*/
+}
+
+a:hover { 
+	color: #000000;
+}
+
+.img_right {
+	float: right;
+	/*float allows the image to sit on a specific area of the webpage. Any area not filled by the space beside the image will be filled with other content from the website that can fit (whether you want it to or not >:(*/
+	padding: 20px 0px 20px 20px;
+	/* padding fills in the top (20px), right (0px), bottom (20px), and then the left (20px).*/
+}
+
+.img_left {
+	float: left;
+	padding: 20px 20px 20px 0px;
+}
+
+
+h1 {
+	font-size: 50px;
+	/*font-size control what size the font is.*/
+	line-height: 125%;
+	color: #FFFFFF;
+}
+
+#container {
+	margin-left: 10px;
+	/*margin controls how much space is beside (not inside like the padding) the content.*/
+	margin-right:150px;
+	font-family:"Courier New", Courier, monospace;
+	font-size: 20px;
+	line-height: 200%;
+}
+
+.text_right {
+	float: right;
+}
+
+h3 {
+	font-size: 25px;
+}
+
+h2 {
+	font-size: 40px;
+	margin-top: 20px;
+}
+
+ul li {
+	color: rgb(255,255,255);
+	font-weight: bold;
+	/*font weight styles the thickness of the font.*/
+	display: inline;
+	/*display: inline allows content such as list items to sit beside each other instead of on top of each other.*/
+}
+
+th {
+	background-color: #000000;
+	text-transform: uppercase;
+	/*text-transform styles the form of the text. For example, all letters can be uppercase, or lowercase, or the first letter of every word can be uppercase.*/
+	font-weight: bold;
+}
+
+td {
+	background-color: #8CC63E;
+}
+
+td, th {
+	border: solid white 2px;
+	/*This allows a border to span on the table. This can help make the table sections clearer and easier to read or help make the table look nicer.*/
+	color: #FFFFFF;
+	padding: 5px;
+	text-align: center;
+	/*text-align makes the content appear in the center of the page or the set area that it's contained in.*/
+}
+
+nav {
+	background-color: #8CC63E;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 18px;
+}
+
+footer {
+	text-align: center;
+	line-height: 250%;
+	border-top: double 4px #FFFFFF;
+	/* border top puts border lines only on the top of the content instead of all around it.*/
+}
+
+ol {
+	color: #FFFFFF;
+}
